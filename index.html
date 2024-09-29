@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Gallery</title>
+    <link rel="stylesheet" href="CSS/grid1.css" />
+    <link rel="stylesheet" href="CSS/styles1.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="#">Home</a>
+      <a href="pag.html">Movie Gallery</a>
+    </div>
+
+    <div class="welcome-section">
+      <h1>Welcome to the Movie Gallery!</h1>
+      <p>
+        Discover a wide range of movies from different genres. Whether you enjoy
+        action-packed adventures, hilarious comedies, touching dramas, or
+        spine-chilling horrors, we have something for everyone. Browse through
+        our collection and find your next favorite film!
+      </p>
+    </div>
+
+    <div class="grid-container" id="movieGrid">
+      <div class="movie-card" data-genre="action">
+        <img
+          class="movie-img"
+          src="imágenes/deadpool.jfif"
+          alt="Deadpool and Wolverine"
+        />
+        <h3>Deadpool and Wolverine</h3>
+        <p>Deadpool and Wolverine unite for action, humor, and epic battles!</p>
+      </div>
+      <div class="movie-card" data-genre="action">
+        <img
+          class="movie-img"
+          src="imágenes/transformer.jfif"
+          alt="Transformers One"
+        />
+        <h3>Transformers One</h3>
+        <p>
+          Transformers One redefines action with epic battles and thrilling
+          adventures!
+        </p>
+      </div>
+
+      <div class="movie-card" data-genre="comedy">
+        <img class="movie-img" src="imágenes/click.jfif" alt="Click" />
+        <h3>Click</h3>
+        <p>
+          Click explores life's choices with humor, heart, and unexpected
+          lessons.
+        </p>
+      </div>
+      <div class="movie-card" data-genre="comedy">
+        <img
+          class="movie-img"
+          src="imágenes/inside out 2.jfif"
+          alt="Intensamente 2"
+        />
+        <h3>Inside Out 2</h3>
+        <p>Inside Out 2 explores emotions with humor, heart, and adventure!</p>
+      </div>
+
+      <div class="movie-card" data-genre="drama">
+        <img class="movie-img" src="imágenes/titanic.jfif" alt="Titanic" />
+        <h3>Titanic</h3>
+        <p>Titanic captures love, tragedy, and hope amidst a sinking ship.</p>
+      </div>
+      <div class="movie-card" data-genre="drama">
+        <img class="movie-img" src="imágenes/hoyo.jfif" alt="El Hoyo" />
+        <h3>El Hoyo</h3>
+        <p>
+          The Platform explores survival, society's flaws, and human desperation
+          powerfully.
+        </p>
+      </div>
+
+      <div class="movie-card" data-genre="horror">
+        <img class="movie-img" src="imágenes/it.jfif" alt="It Chapter 1" />
+        <h3>It Chapter 1</h3>
+        <p>
+          It Chapter One reveals childhood fears and friendship against
+          darkness.
+        </p>
+      </div>
+      <div class="movie-card" data-genre="horror">
+        <img class="movie-img" src="imágenes/it2.jfif" alt="It Chapter 2" />
+        <h3>It Chapter 2</h3>
+        <p>
+          It Chapter 2 explores friendship and fear as adults confront
+          Pennywise.
+        </p>
+      </div>
+    </div>
+
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalMovieImage" class="modal-movie-img" alt="Movie Image" />
+        <h2 id="movieTitle"></h2>
+        <p id="movieDescription"></p>
+      </div>
+    </div>
+
+    <div class="footer">BlockBoss © 2024</div>
+
+    <script src="JS/categoryFilter.js"></script>
+    <script src="JS/modal.js"></script>
+    <script src="JS/favorite.js"></script>
+  </body>
+</html>

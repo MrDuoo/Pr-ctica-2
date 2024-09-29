@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Gallery</title>
+    <link rel="stylesheet" href="CSS/grid.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Movie Gallery</h1>
+    </header>
+
+    <div class="filter-container">
+      <select id="categoryFilter">
+        <option value="all">All Genres</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="horror">Horror</option>
+      </select>
+    </div>
+
+    <div class="grid-container" id="movieGrid">
+      <div class="movie-card" data-genre="action">
+        <img
+          class="movie-img"
+          src="imágenes/deadpool.jfif"
+          alt="Action Movie 1"
+        />
+        <h3>Deadpool and Wolverine</h3>
+        <p>Deadpool and Wolverine unite for action, humor, and epic battles!</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="movie-card" data-genre="action">
+        <img
+          class="movie-img"
+          src="imágenes/transformer.jfif"
+          alt="Action Movie 2"
+        />
+        <h3>Transformers One</h3>
+        <p>
+          Transformers One redefines action with epic battles and thrilling
+          adventures!
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+
+      <div class="movie-card" data-genre="comedy">
+        <img class="movie-img" src="imágenes/click.jfif" alt="Comedy Movie 1" />
+        <h3>Click</h3>
+        <p>
+          Click explores life's choices with humor, heart, and unexpected
+          lessons.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="movie-card" data-genre="comedy">
+        <img
+          class="movie-img"
+          src="imágenes//inside out 2.jfif"
+          alt="Comedy Movie 2"
+        />
+        <h3>Inside out 2</h3>
+        <p>Inside Out 2 explores emotions with humor, heart, and adventure!</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+
+      <div class="movie-card" data-genre="drama">
+        <img
+          class="movie-img"
+          src="imágenes/titanic.jfif"
+          alt="Drama Movie 1"
+        />
+        <h3>Titanic</h3>
+        <p>Titanic captures love, tragedy, and hope amidst a sinking ship.</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="movie-card" data-genre="drama">
+        <img class="movie-img" src="imágenes/hoyo.jfif" alt="Drama Movie 2" />
+        <h3>El Hoyo</h3>
+        <p>
+          The Platform explores survival, society's flaws, and human desperation
+          powerfully.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+
+      <div class="movie-card" data-genre="horror">
+        <img class="movie-img" src="imágenes/it.jfif" alt="Horror Movie 1" />
+        <h3>It Chapter 1</h3>
+        <p>
+          It Chapter One reveals childhood fears and friendship against
+          darkness.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="movie-card" data-genre="horror">
+        <img class="movie-img" src="imágenes/it2.jfif" alt="Horror Movie 2" />
+        <h3>It Chapter 2</h3>
+        <p>
+          It Chapter 2 explores friendship and fear as adults confront
+          Pennywise.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+    </div>
+
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalMovieImage" class="modal-movie-img" alt="Movie Image" />
+        <h2 id="movieTitle"></h2>
+        <p id="movieDescription"></p>
+      </div>
+    </div>
+    <script src="JS/categoryFilter.js"></script>
+    <script src="JS/modal.js"></script>
+    <script src="JS/favorite.js"></script>
+  </body>
+</html>
